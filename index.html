@@ -46,12 +46,9 @@
       bottom: 0;
       width: 100%;
     }
-/* make responsive on phones */
-    @media screen and (max-width: 600px) {
       body {
         font-size: 16px;
       }
-    }
     button {
         color: #f43405;
         margin-top: 50px;
@@ -97,16 +94,12 @@
   font-weight: 700;
   margin-bottom: 60px;
   color: #fff;
-  margin-left: -300px;
 }
 
 .skill {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
-  margin-left: -300px;
-  /* remove margin-left: -300px; */
-  flex-wrap: wrap; /* helps on small screens */
 }
 
 .skill-name {
@@ -139,6 +132,25 @@
   border-radius: 8px 0 0 8px;
 }
     @media screen and (max-width: 600px)
+    {
+      #skills h2,
+      .skill {
+        margin-left: 0;
+        text-align: center;
+      }
+      .skill {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .skill-percent,
+      .progress-bar {
+        margin-left: 0;
+        width: 100%;
+      }
+      .progress-bar {
+        max-width: 100%;
+      }
+    }
   </style>
 </head>
 <header>
